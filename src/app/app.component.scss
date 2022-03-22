@@ -1,0 +1,17 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  mat-form-field{
+      max-width: 130px;
+      .mat-label{
+          height: 100px !important;
+      }
+  }
+  mat-drawer{
+      width: 12%;
+     
+      background-color:#fff;
+  }
+  .example-container{
+      height: 551px;
+  }

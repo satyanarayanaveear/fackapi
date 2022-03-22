@@ -1,0 +1,70 @@
+<mat-card style="margin:30px">
+    <mat-card-title style="text-align: center;">   Update User   </mat-card-title>
+
+<div *ngIf="productLoaded">
+<form [formGroup]="editproductForm" (submit)="updateproduct()" style="align-items: center;">
+    <p>   
+     <mat-form-field appearance="outline">
+        <mat-label>productName</mat-label>
+        <input formControlName="productName" matInput placeholder="Placeholder">
+        </mat-form-field>
+    </p>
+
+   <p>
+
+      <mat-form-field appearance="outline">
+        <mat-label>category</mat-label>
+       <mat-select formControlName="category">
+           <mat-option value="mobiles">mobiles</mat-option>
+           <mat-option value="vegetables">vegetables</mat-option>
+           <mat-option value="fruit">fruit</mat-option>
+         </mat-select>
+      </mat-form-field>
+    </p>
+    
+
+<p>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Choose a date</mat-label>
+        <input formControlName="date" matInput [matDatepicker]="picker">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+    </p>
+
+<p>
+
+
+    <label for=""><h3>Add products</h3></label>
+      <mat-radio-group formControlName="freshness" class="example-radio-group">
+          <mat-radio-button class="example-radio-button" *ngFor="let fresh of freshnessList" [value]="fresh">
+           {{fresh}}
+          </mat-radio-button>
+      </mat-radio-group>
+    </p>
+<p>
+
+
+      <mat-form-field appearance="outline">
+        <mat-label>price</mat-label>
+        <input formControlName="price" matInput type="number">
+     </mat-form-field>
+    </p>
+<p>
+
+     <mat-form-field appearance="outline">
+        <mat-label>comment</mat-label>
+       <textarea  formControlName="Comment"matInput type="text"></textarea>
+     </mat-form-field>
+    </p>
+ 
+    <p class="mat-stroked-button">
+  
+        <button mat-stroked-button color="primary">updateUser</button>
+    </p>
+
+</form>
+
+</div>
+</mat-card>

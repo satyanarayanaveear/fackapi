@@ -1,0 +1,65 @@
+{
+  "productsList": [
+    {
+      "productName": "sdfghjk",
+      "category": "mobiles",
+      "freshness": "Brand New",
+      "price": 575,
+      "Comment": "saryuihvhbn",
+      "date": "2022-03-20T18:30:00.000Z",
+      "id": 1
+    },
+    {
+      "productName": "apple",
+      "category": "mobiles",
+      "freshness": "Brand New",
+      "price": 3700,
+      "Comment": "nice ",
+      "date": "2022-03-20T18:30:00.000Z",
+      "id": 2
+    },
+    {
+      "productName": "sdfghjk",
+      "category": "vegetables",
+      "freshness": "second Hand",
+      "price": 675,
+      "Comment": "sarttfg",
+      "date": "2022-03-22T18:30:00.000Z",
+      "id": 3
+    },
+    {
+      "productName": "venky",
+      "category": "vegetables",
+      "freshness": "Refurbished",
+      "price": 500,
+      "Comment": "he is boy",
+      "date": "2022-03-20T18:30:00.000Z",
+      "id": 4
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "productName": "uytd",
+      "category": "mobiles",
+      "freshness": "second Hand",
+      "price": 567890,
+      "Comment": "vbjklhnm",
+      "date": "2022-03-21T18:30:00.000Z",
+      "id": 7
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
